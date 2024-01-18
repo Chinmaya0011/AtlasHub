@@ -1,0 +1,583 @@
+.country-detail-container{
+    margin: 10px;
+    padding: 5px;
+    display: flex;
+
+}
+.countryDetails{
+    width: 70%;
+      font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+
+}
+.matching-countries{
+
+    width: 20%;
+    align-items: center;
+    text-align: center;
+    margin: 2px;
+    padding: 2px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.section-container {
+  text-align: center;
+  align-items: center;
+    font-size: large;
+font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    margin: 10px;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2), 0 8px 16px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+  }
+  
+  .section-container:hover {
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3), 0 16px 32px rgba(0, 0, 0, 0.2);
+  }
+  
+  /* General Information Section */
+  #general-info-section {
+    background-color: #3498db;
+    color: #0a0808;
+  }
+  
+  /* Geography Section */
+  #geography-section {
+    background-color: #27ae60;
+    color: #faf7fa;
+  }
+  
+  /* Government Section */
+  #government-section {
+    background-color: #e74c3c;
+    color: #000000;
+  }
+  
+  /* Economy Section */
+  #economy-section {
+    background-color: #f39c12;
+    color: #ffffff;
+  }
+  
+  /* Culture Section */
+  #culture-section {
+    background-color: #8e44ad;
+    color: #000000;
+  }
+  
+  /* History Section */
+  #history-section {
+    background-color: #2c3e50;
+    color: #ffffff;
+  }
+  
+  /* Education Section */
+  #education-section {
+    background-color: #d35400;
+    color: #010101;
+  }
+  
+  /* Infrastructure Section */
+  #infrastructure-section {
+    background-color: #34495e;
+    color: #ffffff;
+  }
+  
+  /* Healthcare Section */
+  #healthcare-section {
+    background-color: #1abc9c;
+    color: #000000;
+  }
+  
+  /* Miscellaneous Section */
+  #miscellaneous-section {
+    background-color: #ecf0f1;
+    color: #293ab8;
+    align-items: center;
+    margin-top: 10px;
+    text-align: center;
+  }
+  .matching-countries-list {
+    list-style:decimal;
+    padding: 0;
+    display: flex;
+
+    flex-wrap: wrap;
+    justify-content:flex-start;
+    align-items: center;
+    margin-top: 10px;
+    text-align: center;
+  }
+  
+  .matching-country-item {
+    margin-left: 20px;
+    width: 400px;
+    
+    border: 2px solid #ccc;
+    border-radius: 5px;
+    background-color: #1cbc24;
+  }
+  
+  .matching-country-item button {
+    cursor: pointer;
+    background-color: #3498db;
+    color: #f1f1f1;
+    padding: 6px 10px;
+    border: none;
+    border-radius: 3px;
+    transition: background-color 0.3s ease;
+    width: 100%;
+  }
+  
+  .matching-country-item button:hover {
+    background-color: #2c3e50;
+  }
+  /* CountryDetail.css */
+
+.matching-countries-list {
+  list-style: none;
+  padding: 0;
+}
+
+.matching-country-item {
+  margin: 5px;
+}
+
+.matching-country-item button {
+  cursor: pointer;
+  border: none;
+  background-color: transparent;
+}
+
+.matching-country-item.selected {
+  background-color: rgb(0, 0, 0); /* Set the desired background color for the selected country */
+}
+/* Style for the unordered list */
+ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+/* Style for the paragraph containing the country borders information */
+.info-item {
+  margin: 0;
+}
+
+/* Style for the buttons representing each country */
+.border-country {
+  margin-left:4px ;
+  margin-right: 8px; /* Adjust the spacing between buttons as needed */
+  margin-bottom: 8px; /* Adjust the spacing between buttons and paragraph as needed */
+  padding: 4px 6px;
+  background-color: #aea727; /* Set your desired background color */
+  color: #fff; /* Set your desired text color */
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+/* Hover effect for buttons */
+.border-country:hover {
+  background-color: #2980b9; /* Set your desired background color on hover */
+}
+.no-borders-message {
+  color: #c12727; /* Set your desired text color for the message */
+  font-style: italic;
+  margin: 10px;
+}
+.industry-button {
+  margin-left:4px ;
+  margin-right: 8px; /* Adjust the spacing between buttons as needed */
+  margin-bottom: 8px; /* Adjust the spacing between buttons and paragraph as needed */
+  padding: 4px 6px;
+  background-color: #27ae60; /* Set your desired background color */
+  color: #fff; /* Set your desired text color */
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+/* Hover effect for buttons */
+.industry-button:hover {
+  background-color: #218c53; /* Set your desired background color on hover */
+}
+
+
+
+
+
+.export-button{
+  margin-left:4px ;
+  margin-right: 8px; /* Adjust the spacing between buttons as needed */
+  margin-bottom: 8px; /* Adjust the spacing between buttons and paragraph as needed */
+  padding: 4px 6px;
+  background-color: #ae2797; /* Set your desired background color */
+  color: #fff; /* Set your desired text color */
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+/* Hover effect for buttons */
+.export-button:hover,
+.import-button:hover {
+  background-color: #d68910; /* Set your desired background color on hover */
+}
+.import-button{
+  margin-left:4px ;
+  margin-right: 8px; /* Adjust the spacing between buttons as needed */
+  margin-bottom: 8px; /* Adjust the spacing between buttons and paragraph as needed */
+  padding: 4px 6px;
+  background-color: #27a3ae; /* Set your desired background color */
+  color: #fff; /* Set your desired text color */
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+/* Style for ethnic group buttons */
+.ethnic-group-button {
+  margin-left: 4px;
+  margin-right: 8px;
+  margin-bottom: 8px;
+  padding: 4px 6px;
+  background-color: #3498db; /* Set your desired background color for ethnic group button */
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+/* Style for religion button */
+.religion-button {
+  margin-left: 4px;
+  margin-right: 8px;
+  margin-bottom: 8px;
+  padding: 4px 6px;
+  background-color: #e74c3c; /* Set your desired background color for religion button */
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+/* Style for holiday buttons */
+.holiday-button {
+  margin-left: 4px;
+  margin-right: 8px;
+  margin-bottom: 8px;
+  padding: 4px 6px;
+  background-color: #2ecc71; /* Set your desired background color for holiday button */
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+/* Style for landmark buttons */
+.landmark-button {
+  margin-left: 4px;
+  margin-right: 8px;
+  margin-bottom: 8px;
+  padding: 4px 6px;
+  background-color: #f39c12; /* Set your desired background color for landmark button */
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+
+/* Style for historical event buttons */
+.historical-event-button {
+  margin-left: 4px;
+  margin-right: 8px;
+  margin-bottom: 8px;
+  padding: 4px 6px;
+  background-color: #4e12f3; /* Set your desired background color for landmark button */
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  /* Additional styles specific to historical event buttons if needed */
+}
+
+/* Style for Independence Day button */
+.independence-day-button {
+  margin-left: 4px;
+  margin-right: 8px;
+  margin-bottom: 8px;
+  padding: 4px 6px;
+  background-color: #f312a1; /* Set your desired background color for landmark button */
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  /* Additional styles specific to Independence Day button if needed */
+}
+
+/* Style for notable figure buttons */
+.notable-figure-button {
+  margin-left: 4px;
+  margin-right: 8px;
+  margin-bottom: 8px;
+  padding: 4px 6px;
+  background-color: #12c2f3; /* Set your desired background color for landmark button */
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  /* Additional styles specific to notable figure buttons if needed */
+}
+
+
+/* Style for education button */
+.education-button {
+  margin-left: 4px;
+  margin-right: 8px;
+  margin-bottom: 8px;
+  padding: 4px 6px;
+  background-color: #59b822c6; /* Set your desired background color for landmark button */
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  /* Additional styles specific to education button if needed */
+}
+
+/* Style for literacy rate button */
+.literacy-rate-button {
+  margin-left: 4px;
+  margin-right: 8px;
+  margin-bottom: 8px;
+  padding: 4px 6px;
+  background-color: #12f386; /* Set your desired background color for landmark button */
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  /* Additional styles specific to literacy rate button if needed */
+}
+
+/* Style for transportation button */
+.transportation-button {
+  margin-left: 4px;
+  margin-right: 8px;
+  margin-bottom: 8px;
+  padding: 4px 6px;
+  background-color: #f37312; /* Set your desired background color for landmark button */
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  /* Additional styles specific to transportation button if needed */
+}
+
+/* Style for energy source button */
+.energy-source-button {
+  margin-left: 4px;
+  margin-right: 8px;
+  margin-bottom: 8px;
+  padding: 4px 6px;
+  background-color: #8e12f3; /* Set your desired background color for landmark button */
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  /* Additional styles specific to energy source button if needed */
+}
+
+/* Style for access button */
+.access-button {
+  margin-left: 4px;
+  margin-right: 8px;
+  margin-bottom: 8px;
+  padding: 4px 6px;
+  background-color: #1d12f3; /* Set your desired background color for landmark button */
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  
+  /* Additional styles specific to access button if needed */
+}
+
+/* Style for infant mortality rate button */
+.infant-mortality-rate-button {
+  margin-left: 4px;
+  margin-right: 8px;
+  margin-bottom: 8px;
+  padding: 4px 6px;
+  background-color: #7bf312; /* Set your desired background color for landmark button */
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  /* Additional styles specific to infant mortality rate button if needed */
+}
+
+/* Style for life expectancy button */
+.life-expectancy-button {
+  margin-left: 4px;
+  margin-right: 8px;
+  margin-bottom: 8px;
+  padding: 4px 6px;
+  background-color: #e812f3; /* Set your desired background color for landmark button */
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  /* Additional styles specific to life expectancy button if needed */
+}
+
+/* Style for time zone button */
+.time-zone-button {
+  margin-left: 4px;
+  margin-right: 8px;
+  margin-bottom: 8px;
+  padding: 4px 6px;
+  background-color: #12f3bfb8; /* Set your desired background color for landmark button */
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  /* Additional styles specific to time zone button if needed */
+}
+
+/* Style for internet TLD button */
+.internet-tld-button {
+  margin-left: 4px;
+  margin-right: 8px;
+  margin-bottom: 8px;
+  padding: 4px 6px;
+  background-color: #5d12f3; /* Set your desired background color for landmark button */
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  /* Additional styles specific to internet TLD button if needed */
+}
+
+/* Style for calling code button */
+.calling-code-button {
+  margin-left: 4px;
+  margin-right: 8px;
+  margin-bottom: 8px;
+  padding: 4px 6px;
+  background-color: #f31246; /* Set your desired background color for landmark button */
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  /* Additional styles specific to calling code button if needed */
+}
+
+/* Style for country name button */
+.country-name-button {
+  margin-left: 4px;
+  margin-right: 8px;
+  margin-bottom: 8px;
+  padding: 4px 6px;
+  background-color: #2d9e33; /* Set your desired background color for landmark button */
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  /* Additional styles specific to country name button if needed */
+}
+
+/* Style for capital button */
+.capital-button {
+  margin-left: 4px;
+  margin-right: 8px;
+  margin-bottom: 8px;
+  padding: 4px 6px;
+  background-color: #8212f3; /* Set your desired background color for landmark button */
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  /* Additional styles specific to capital button if needed */
+}
+
+/* Style for population button */
+.population-button {
+  margin-left: 4px;
+  margin-right: 8px;
+  margin-bottom: 8px;
+  padding: 4px 6px;
+  background-color: #92f312; /* Set your desired background color for landmark button */
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  /* Additional styles specific to population button if needed */
+}
+
+/* Style for area button */
+.area-button {
+  margin-left: 4px;
+  margin-right: 8px;
+  margin-bottom: 8px;
+  padding: 4px 6px;
+  background-color: #12f3c6; /* Set your desired background color for landmark button */
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  /* Additional styles specific to area button if needed */
+}
+.continent-button {
+  margin-left: 4px;
+  margin-right: 8px;
+  margin-bottom: 8px;
+  padding: 4px 6px;
+  background-color: #124af3; /* Set your desired background color for landmark button */
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  /* Additional styles specific to continent button if needed */
+}
+
+/* Style for type of government button */
+.gov-type-button {
+  margin-left: 4px;
+  margin-right: 8px;
+  margin-bottom: 8px;
+  padding: 4px 6px;
+  background-color: #e012f3; /* Set your desired background color for landmark button */
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  /* Additional styles specific to type of government button if needed */
+}
+
+/* Style for head of state button */
+.head-of-state-button {
+  margin-left: 4px;
+  margin-right: 8px;
+  margin-bottom: 8px;
+  padding: 4px 6px;
+  background-color: #12f346; /* Set your desired background color for landmark button */
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  /* Additional styles specific to head of state button if needed */
+}
+
+/* Style for political system button */
+.political-system-button {
+  margin-left: 4px;
+  margin-right: 8px;
+  margin-bottom: 8px;
+  padding: 4px 6px;
+  background-color: #128ef3; /* Set your desired background color for landmark button */
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  /* Additional styles specific to political system button if needed */
+}

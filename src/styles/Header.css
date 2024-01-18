@@ -1,0 +1,122 @@
+/* Default styles for all screen sizes */
+
+/* Header Styles */
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: linear-gradient(45deg, #e73330, #FFC371); /* Gradient background, you can change it */
+
+    padding: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    border-radius: 8px;
+}
+
+/* Logo Styles */
+.logo {
+   
+
+   
+    text-decoration: dotted;
+  
+    font-size: 18px;
+    font-style: initial;
+    text-shadow: 0 0 10px #333; /* Adding a subtle text shadow for better visibility */
+    color: aqua;
+}
+
+/* Adding hover effect for the logo */
+.logo:hover {
+    color: rgb(4, 255, 0); /* Changing color on hover */
+}
+
+/* Search Bar Styles */
+.search-bar {
+    width: 30%;
+    display: flex;
+    align-items: center;
+}
+
+.search-bar input {
+    flex: 1;
+    padding: 14px;
+    margin-right: 10px;
+    border-radius: 15px;
+    border: none;
+    background-color: #42d83dd2;
+    transition: box-shadow 0.3s ease;
+}
+
+.search-bar input:focus {
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* 3D effect on focus */
+}
+
+.search-bar button {
+    color: rgb(255, 255, 255);
+    font-size: large;
+    padding: 10px 20px;
+    text-align: center;
+    background-color: #66c3d6a4;
+    border: 1px solid #ccc;
+    cursor: pointer;
+    border-radius: 15px;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.search-bar button:hover {
+    background-color: #4191aa;
+    transform: translateY(-2px); /* Lift effect on hover */
+}
+
+/* Navigation Styles */
+.nav {
+    width: 40%;
+}
+
+.nav ul {
+
+    list-style-type: none;
+    display: flex;
+    margin-left: 100px;
+    justify-content: flex-start;
+}
+
+.nav li {
+    margin-right: 15px;
+}
+
+.nav a {
+    font-size: 25px;
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
+    border-radius: 5px;
+    padding: 8px;
+}
+
+.nav a:hover {
+    background-color: #555;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    color: #fff;
+}
+
+/* Media Queries */
+
+/* Responsive styles for smaller screens */
+@media screen and (max-width: 768px) {
+    .header {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .search-bar,
+    .nav {
+        width: 100%;
+        margin-top: 15px;
+    }
+
+    .nav ul {
+        margin-left: 0;
+        justify-content: center;
+    }
+}

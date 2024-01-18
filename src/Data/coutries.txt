@@ -1,0 +1,256 @@
+General Information:
+
+Country Name
+Capital
+Population
+Area
+Official Language(s)
+Currency
+Geography:
+
+Continent
+Borders (countries it shares borders with)
+Landforms (mountains, rivers, etc.)
+Government:
+
+Type of Government
+Head of State/Government
+Political System
+Economy:
+
+GDP (Gross Domestic Product)
+Industries
+Major Exports and Imports
+Culture:
+
+Ethnic Groups
+Religion
+National Holidays
+Famous Landmarks
+History:
+
+Historical Events
+Independence Day
+Notable Figures
+Education:
+
+Education System
+Literacy Rate
+Infrastructure:
+
+Transportation (airports, roads, railways)
+Energy sources
+Healthcare:
+
+Healthcare System
+Life Expectancy
+Major Health Issues
+Miscellaneous:
+
+Time Zone
+Internet TLD (Top-Level Domain)
+Calling Code
+
+
+
+
+
++----+-----------------------------------------------+
+| ID | Country                                       |
++----+-----------------------------------------------+
+| 1  | Afghanistan                                   |
+| 2  | Albania                                       |
+| 3  | Algeria                                       |
+| 4  | Andorra                                       |
+| 5  | Angola                                        |
+| 6  | Antigua and Barbuda                           |
+| 7  | Argentina                                     |
+| 8  | Armenia                                       |
+| 9  | Australia                                     |
+| 10 | Austria                                       |
+| 11 | Azerbaijan                                    |
+| 12 | Bahamas                                       |
+| 13 | Bahrain                                       |
+| 14 | Bangladesh                                    |
+| 15 | Barbados                                      |
+| 16 | Belarus                                       |
+| 17 | Belgium                                       |
+| 18 | Belize                                        |
+| 19 | Benin                                         |
+| 20 | Bhutan                                        |
+| 21 | Bolivia                                       |
+| 22 | Bosnia and Herzegovina                       |
+| 23 | Botswana                                      |
+| 24 | Brazil                                        |
+| 25 | Brunei                                        |
+| 26 | Bulgaria                                      |
+| 27 | Burkina Faso                                  |
+| 28 | Burundi                                       |
+| 29 | Cabo Verde                                    |
+| 30 | Cambodia                                      |
+| 31 | Cameroon                                      |
+| 32 | Canada                                        |
+| 33 | Central African Republic                      |
+| 34 | Chad                                          |
+| 35 | Chile                                         |
+| 36 | China                                         |
+| 37 | Colombia                                      |
+| 38 | Comoros                                       |
+| 39 | Congo                                         |
+| 40 | Costa Rica                                    |
+| 41 | Croatia                                       |
+| 42 | Cuba                                          |
+| 43 | Cyprus                                        |
+| 44 | Czechia (Czech Republic)                      |
+| 45 | Denmark                                       |
+| 46 | Djibouti                                      |
+| 47 | Dominica                                      |
+| 48 | Dominican Republic                            |
+| 49 | East Timor (Timor-Leste)                      |
+| 50 | Ecuador                                       |
+| 51 | Egypt                                         |
+| 52 | El Salvador                                   |
+| 53 | Equatorial Guinea                             |
+| 54 | Eritrea                                       |
+| 55 | Estonia                                       |
+| 56 | Eswatini                                      |
+| 57 | Ethiopia                                      |
+| 58 | Fiji                                          |
+| 59 | Finland                                       |
+| 60 | France                                        |
+| 61 | Gabon                                         |
+| 62 | Gambia                                        |
+| 63 | Georgia                                       |
+| 64 | Germany                                       |
+| 65 | Ghana                                         |
+| 66 | Greece                                        |
+| 67 | Grenada                                       |
+| 68 | Guatemala                                     |
+| 69 | Guinea                                        |
+| 70 | Guinea-Bissau                                 |
+| 71 | Guyana                                        |
+| 72 | Haiti                                         |
+| 73 | Honduras                                      |
+| 74 | Hungary                                       |
+| 75 | Iceland                                       |
+| 76 | India                                         |
+| 77 | Indonesia                                     |
+| 78 | Iran                                          |
+| 79 | Iraq                                          |
+| 80 | Ireland                                       |
+| 81 | Israel                                        |
+| 82 | Italy                                         |
+| 83 | Ivory Coast                                   |
+| 84 | Jamaica                                       |
+| 85 | Japan                                         |
+| 86 | Jordan                                        |
+| 87 | Kazakhstan                                    |
+| 88 | Kenya                                         |
+| 89 | Kiribati                                      |
+| 90 | Korea, North                                  |
+| 91 | Korea, South                                  |
+| 92 | Kosovo                                        |
+| 93 | Kuwait                                        |
+| 94 | Kyrgyzstan                                    |
+| 95 | Laos                                          |
+| 96 | Latvia                                        |
+| 97 | Lebanon                                       |
+| 98 | Lesotho                                       |
+| 99 | Liberia                                       |
+| 100| Libya                                         |
+| 101| Liechtenstein                                 |
+| 102| Lithuania                                    |
+| 103| Luxembourg                                    |
+| 104| Madagascar                                    |
+| 105| Malawi                                       |
+| 106| Malaysia                                      |
+| 107| Maldives                                     |
+| 108| Mali                                         |
+| 109| Malta                                        |
+| 110| Marshall Islands                              |
+| 111| Mauritania                                    |
+| 112| Mauritius                                     |
+| 113| Mexico                                       |
+| 114| Micronesia                                   |
+| 115| Moldova                                      |
+| 116| Monaco                                       |
+| 117| Mongolia                                     |
+| 118| Montenegro                                   |
+| 119| Morocco                                      |
+| 120| Mozambique                                   |
+| 121| Myanmar (Burma)                              |
+| 122| Namibia                                      |
+| 123| Nauru                                        |
+| 124| Nepal                                        |
+| 125| Netherlands                                   |
+| 126| New Zealand                                  |
+| 127| Nicaragua                                    |
+| 128| Niger                                        |
+| 129| Nigeria                                      |
+| 130| North Macedonia (formerly Macedonia)          |
+| 131| Norway                                       |
+| 132| Oman                                         |
+| 133| Pakistan                                     |
+| 134| Palau                                        |
+| 135| Panama                                       |
+| 136| Papua New Guinea                              |
+| 137| Paraguay                                     |
+| 138| Peru                                         |
+| 139| Philippines                                  |
+| 140| Poland                                       |
+| 141| Portugal                                     |
+| 142| Qatar                                        |
+| 143| Romania                                      |
+| 144| Russia                                       |
+| 145| Rwanda                                       |
+| 146| Saint Kitts and Nevis                        |
+| 147| Saint Lucia                                  |
+| 148| Saint Vincent and the Grenadines             |
+| 149| Samoa                                        |
+| 150| San Marino                                   |
+| 151| Sao Tome and Principe                         |
+| 152| Saudi Arabia                                 |
+| 153| Senegal                                      |
+| 154| Serbia                                       |
+| 155| Seychelles                                   |
+| 156| Sierra Leone                                 |
+| 157| Singapore                                    |
+| 158| Slovakia                                     |
+| 159| Slovenia                                     |
+| 160| Solomon Islands                              |
+| 161| Somalia                                      |
+| 162| South Africa                                 |
+| 163| South Sudan                                  |
+| 164| Spain                                        |
+| 165| Sri Lanka                                    |
+| 166| Sudan                                        |
+| 167| Suriname                                     |
+| 168| Sweden                                       |
+| 169| Switzerland                                  |
+| 170| Syria                                        |
+| 171| Taiwan                                       |
+| 172| Tajikistan                                   |
+| 173| Tanzania                                     |
+| 174| Thailand                                     |
+| 175| Togo                                         |
+| 176| Tonga                                        |
+| 177| Trinidad and Tobago                          |
+| 178| Tunisia                                      |
+| 179| Turkey                                       |
+| 180| Turkmenistan                                 |
+| 181| Tuvalu                                       |
+| 182| Uganda                                       |
+| 183| Ukraine                                      |
+| 184| United Arab Emirates                         |
+| 185| United Kingdom                               |
+| 186| United States of America                     |
+| 187| Uruguay                                      |
+| 188| Uzbekistan                                   |
+| 189| Vanuatu                                      |
+| 190| Vatican City                                 |
+| 191| Venezuela                                    |
+| 192| Vietnam                                      |
+| 193| Yemen                                        |
+| 194| Zambia                                       |
+| 195| Zimbabwe                                     |
++----+-----------------------------------------------+
