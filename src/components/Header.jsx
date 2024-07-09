@@ -2,12 +2,9 @@
 import React from 'react';
 import '../styles/Header.css';
 import { IoHome } from "react-icons/io5";
-import { FaMapMarked } from "react-icons/fa";
-import { TbCategoryFilled } from "react-icons/tb";
-import { FaBlog } from "react-icons/fa6";
 import { FaSearchLocation } from "react-icons/fa";
-import { GrContact } from "react-icons/gr";
 import { SiAtlassian } from "react-icons/si";
+import { FaCogs } from "react-icons/fa"; // Importing an icon for API
 
 const Header = ({ searchCountry, handleSearch, handleSearchButtonClick }) => {
   return (
@@ -23,11 +20,8 @@ const Header = ({ searchCountry, handleSearch, handleSearchButtonClick }) => {
 
       <nav className="nav">
         <ul>
-          <li><a href="/"><IoHome /></a></li>
-          <li><a href="/explore"><FaMapMarked /></a></li>
-          <li><a href="/categories"><TbCategoryFilled /></a></li>
-          <li><a href="/contact"><GrContact /></a></li>
-          <li><a href="/blog"><FaBlog /></a></li>
+          <li><a href="/"><IoHome /> Home</a></li>
+          <li><a href="/api"><FaCogs /> API</a></li> {/* Adding the API icon and text */}
           {/* Add more navigation items as needed */}
         </ul>
       </nav>

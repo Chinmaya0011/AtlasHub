@@ -34,5 +34,5 @@ font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;    font-
   
   .category p.selected {
    
-    background: linear-gradient(45deg, #8aff5f, #0df8c9); /* Gradient background, you can change it */
+    background: linear-gradient(45deg, #ff5ffc, #189bb5); /* Gradient background, you can change it */
    }

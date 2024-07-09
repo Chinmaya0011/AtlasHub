@@ -4,7 +4,7 @@ import Header from './components/Header';
 import './App.css';
 import Category from './components/Category';
 import CountryDetail from './components/CountryDetail';
-
+import Api from './components/Api';
 function App() {
   const [searchCountry, setSearchCountry] = useState('');
   const [selectedCountry, setSelectedCountry] = useState(null);
@@ -30,6 +30,7 @@ function App() {
       <Header searchCountry={searchCountry} handleSearch={handleSearch} handleSearchButtonClick={handleSearchButtonClick} />
       <Category />
       <CountryDetail handleButtonClick={handleButtonClick} searchCountry={searchCountry} selectedCountry={selectedCountry} />
+      <Api/>
     </>
   );
 }
