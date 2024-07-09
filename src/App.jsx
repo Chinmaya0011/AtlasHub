@@ -31,6 +31,7 @@ function App() {
       <Category />
       <CountryDetail handleButtonClick={handleButtonClick} searchCountry={searchCountry} selectedCountry={selectedCountry} />
       <Api/>
+      
     </>
   );
 }
