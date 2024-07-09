@@ -1,7 +1,7 @@
 import React from 'react';
 
-// Define your API URL directly
-const apiUrl = 'https://atlas-hub-omega.vercel.app';
+// Determine the API URL based on the environment
+const apiUrl = window.location.hostname === 'localhost' ? 'http://localhost:3000' : 'https://atlas-hub-omega.vercel.app';
 
 const Api = () => {
   return (
