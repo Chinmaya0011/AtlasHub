@@ -1,12 +1,17 @@
 import React from 'react';
 
-const Api = () => {
-  const apiUrl = process.env.REACT_APP_API_URL || 'https://atlas-hub-omega.vercel.app';
+// Define your API URL directly
+const apiUrl = 'https://atlas-hub-omega.vercel.app';
 
+const Api = () => {
   return (
     <div>
       <h2>How to use My Api Component</h2>
-      <p>This component demonstrates fetching data from an API endpoint. To use this component:</p>
+      <p>
+        This component demonstrates fetching data from an API endpoint.
+        To use this component:
+      </p>
+       
       <p>API Endpoint:</p>
       <div>
         <p>Fetch all countries</p>
@@ -14,12 +19,14 @@ const Api = () => {
           {`${apiUrl}/api/countries`}
         </a>
       </div>
+
       <div>
         <p>Fetch single country</p>
         <a href={`${apiUrl}/api/countries/search/india`} target="_blank" rel="noopener noreferrer">
           {`${apiUrl}/api/countries/search/countryname`}
         </a>
       </div>
+
       <div>
         <p>Fetch by ID</p>
         <a href={`${apiUrl}/api/countries/1`} target="_blank" rel="noopener noreferrer">
