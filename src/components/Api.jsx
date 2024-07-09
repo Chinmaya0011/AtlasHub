@@ -14,21 +14,21 @@ const Api = () => {
 
       <div>
         <p>Fetch all countries:</p>
-        <a href="https://atlas-hub-chinu.vercel.app/api/countries" target="_blank" rel="noopener noreferrer">
+        <a href="https://atlas-hub-three.vercel.app/api/countries" target="_blank" rel="noopener noreferrer">
           https://atlas-hub-chinu.vercel.app/api/countries
         </a>
       </div>
 
       <div>
         <p>Fetch single country by name:</p>
-        <a href="https://atlas-hub-chinu.vercel.app/api/countries/search/india" target="_blank" rel="noopener noreferrer">
+        <a href="https://atlas-hub-three.vercel.app/api/countries/search/india" target="_blank" rel="noopener noreferrer">
           https://atlas-hub-chinu.vercel.app/api/countries/search/india
         </a>
       </div>
 
       <div>
         <p>Fetch country by ID:</p>
-        <a href="https://atlas-hub-chinu.vercel.app/api/countries/1" target="_blank" rel="noopener noreferrer">
+        <a href="https://atlas-hub-three.vercel.app/countries/1" target="_blank" rel="noopener noreferrer">
           https://atlas-hub-chinu.vercel.app/api/countries/1
         </a>
       </div>
