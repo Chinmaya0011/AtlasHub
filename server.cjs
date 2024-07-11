@@ -3,17 +3,17 @@ const cors = require('cors');
 const path = require('path');
 
 const app = express();
-const port = 3000;
+const port = process.env.PORT || 3000;
 
 app.use(cors()); // Allow all origins
 
-// Serve static files from the React app (if applicable)
-app.use(express.static(path.join(__dirname, 'client/build')));
+// Serve static files from the React app
+app.use(express.static(path.join(__dirname, '../client/build')));
 
 // Use dynamic import for ES Modules
 (async () => {
   try {
-    const countriesModule = await import('./src/Data/countries.js');
+    const countriesModule = await import('../src/Data/countries.js');
     const countriesData = countriesModule.default;
 
     // Endpoint to get all countries
@@ -48,9 +48,9 @@ app.use(express.static(path.join(__dirname, 'client/build')));
       }
     });
 
-    // Serve the React app (if applicable)
+    // Serve the React app
     app.get('*', (req, res) => {
-      res.sendFile(path.join(__dirname, 'client/build', 'index.html'));
+      res.sendFile(path.join(__dirname, '../client/build', 'index.html'));
     });
 
     app.listen(port, () => {
