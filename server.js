@@ -3,7 +3,14 @@ import cors from 'cors';
 import countries from './src/Data/countries.js';
 
 const app = express();
-const port = process.env.PORT || 3000; // Use an environment variable or default to port 3000
+
+// Determine if we are in a Vercel environment or local environment
+const isVercel = false; // Set this to `true` when deploying to Vercel, or use a condition to detect the environment
+const localPort = 3000; // Local development port
+const vercelPort = 3000; // Vercel deploys on a port assigned by the platform
+
+// Port configuration
+const port = isVercel ? vercelPort : localPort; // Use `vercelPort` if deploying to Vercel or `localPort` otherwise
 
 // Middleware
 app.use(cors());
@@ -23,6 +30,8 @@ app.get('/api/countries/:id', (req, res) => {
   }
 });
 
+// Start the server
 app.listen(port, () => {
-  console.log(`Server is running on http://localhost:${port}`);
+  const baseURL = isVercel ? 'https://atlas-hub-omega.vercel.app' : `http://localhost:${port}`;
+  console.log(`Server is running on ${baseURL}`);
 });
