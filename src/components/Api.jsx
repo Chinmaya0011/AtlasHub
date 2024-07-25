@@ -20,12 +20,6 @@ const Api = () => {
         </a>
       </div>
 
-      <div>
-        <p>Fetch single country</p>
-        <a href={`${apiUrl}/api/countries/search/india`} target="_blank" rel="noopener noreferrer">
-          {`${apiUrl}/api/countries/search/countryname`}
-        </a>
-      </div>
 
       <div>
         <p>Fetch by ID</p>
