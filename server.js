@@ -1,9 +1,11 @@
-// api/countries.js
 import express from 'express';
 import cors from 'cors';
-import countries from '../src/Data/countries.js';
+import countries from './src/Data/countries.js';
 
 const app = express();
+const port = process.env.PORT || 3000; // Use an environment variable or default to port 3000
+
+// Middleware
 app.use(cors());
 
 // Define a route to serve all countries
@@ -21,12 +23,6 @@ app.get('/api/countries/:id', (req, res) => {
   }
 });
 
-// Only start the server if running locally
-if (process.env.NODE_ENV !== 'production') {
-  const port = process.env.PORT || 3000;
-  app.listen(port, () => {
-    console.log(`Server is running on http://localhost:${port}`);
-  });
-}
-
-export default app;
+app.listen(port, () => {
+  console.log(`Server is running on http://localhost:${port}`);
+});
