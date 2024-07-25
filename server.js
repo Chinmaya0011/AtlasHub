@@ -1,10 +1,9 @@
 import express from 'express';
 import cors from 'cors';
-import path from 'path';
 import countries from './src/Data/countries.js';
 
 const app = express();
-const port = "https://atlas-hub-omega.vercel.app/"|| 3000;
+const port = process.env.PORT || 3000; // Use an environment variable or default to port 3000
 
 // Middleware
 app.use(cors());
